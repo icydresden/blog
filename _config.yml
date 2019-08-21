@@ -1,3 +1,4 @@
+
 # Basic
 title: Robotkang
 subtitle: 自留地
@@ -68,9 +69,4 @@ nav:
 gems: [jekyll-paginate]
 paginate: 20
 paginate_path: "page/:num/"
-
-
-
-
-
 
