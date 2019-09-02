@@ -1,0 +1,27 @@
+
+  .red-text {
+    color:red;
+  }
+  .cat-img {
+    width: 60px;
+    border-radius: 80%;
+  }
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    color:#000;
+  }
