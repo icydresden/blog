@@ -4,9 +4,13 @@
       var slotTwo;
       var slotThree;
      
-      var images = ["https://media.licdn.com/dms/image/C560BAQHfmwax6hBMPA/company-logo_200_200/0?e=2159024400&v=beta&t=MQHhWaB7vfeWBQ0BHDXFP2GeRKHJzw2PG6rozCr_MSc", 
-                    "https://www.pngkey.com/png/detail/303-3036579_free-code-camp-logo-transparent.png", 
-                    "https://frontstuff.io/assets/2018-01-29/instanciated-svg-symbol-icon.png"];
+      var images = ["https://compresspng.com/images/compresspng/icon.png", 
+                    "https://img.pngio.com/cute-duck-png-pic-small-duck-png-512_512.png", 
+                    "https://bitcoincashers.org/visual-assets/bch_b_small.png",
+                    "http://www.wikidebrouillard.org/images/6/6d/ScratchCat-Small.png",
+                    "https://pngimage.net/wp-content/uploads/2018/06/png-small-images.png",
+                    "https://cdn4.vectorstock.com/i/thumb-large/65/13/buffalo-vector-2256513.jpg"
+                    ];
      
       // 请把你的代码写在这条注释以下
       
@@ -19,7 +23,25 @@
       slotThree = myRand();
       
       // 请把你的代码写在这条注释以上
-      
+      if(slotOne === slotTwo && slotTwo === slotThree){
+        $(".logger").append("It's A win");
+        return slotOne;
+      }
+      else{
+        return null;
+        }
+        //jQuery将会获取到第一个老虎机，并更新它的HTML为正确的数字。
+        //任务：分别更新每个老虎机上的HTML为对应的数字
+        $($(".slot")[0]).html(slotOne);
+        $($(".slot")[1]).html(slotTwo);
+        $($(".slot")[2]).html(slotThree);
+
+        // 更新图片
+        $($('.slot')[0]).html('<img src = "' + images[slotOne] + '">');
+        $($('.slot')[1]).html('<img src = "' + images[slotTwo] + '">');
+        $($('.slot')[2]).html('<img src = "' + images[slotThree] + '">');
+        
+
       
       if (slotOne !== undefined && slotTwo !== undefined && slotThree !== undefined) {
         $(".logger").html(slotOne + " " + slotTwo + " " + slotThree);
@@ -35,7 +57,7 @@
          runSlots();
        });
      });
-  </script>
+</script>
    
   <div>
    <div class = "container inset">
