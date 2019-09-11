@@ -29,3 +29,38 @@
   .tiger-image{
     border-radius: 50%;
   }
+
+
+.nav{
+  height:50px;
+  margin-top:20px;
+  margin-left:10px;
+}
+.nav ul{
+  list-style:none;
+  height:50px;
+  border-bottom:10px solid #FF6600;
+  padding-left:30px;
+}
+.nav li{
+  float:left;
+  margin-top:10px;
+}
+.nav li a{
+   background-color:#EEEEEE;
+   text-decoration:none;
+   color:#000000;
+   display:block;
+   width:90px;
+   height:40px;
+   line-height:40px;
+   text-align:center;
+   margin-left:1px;
+   /*设置圆角属性,IE6,7,8不支持*/
+   border-top-left-radius:15px;
+   border-top-right-radius:15px;
+}
+.nav li a:hover,.nav li a.on{
+   background-color:#FF6600;
+   color:#FFFFFF;
+}
